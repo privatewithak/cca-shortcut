@@ -38,11 +38,3 @@ npm run build
 ```
 
 > Requires **Node.js 18+**
-
----
-
-## Adding Content
-
-All data lives in `src/components/data/arrays.js`. Each article/punishment is an object.
-
----
