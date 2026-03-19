@@ -1,18 +1,57 @@
-# React + Vite
+# CCA regulations viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-latest-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-latest-EF0082?style=flat-square&logo=framer&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
-Currently, two official plugins are available:
+a minimalistic, glassmorph-ui-designed app for fellow hl2rp roblox larpers! features regulations and terminology.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Project Structure
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```
+src/
+├── components/
+│   ├── data/
+│   │   └── arrays.js        # data arrays, to be used with components
+│   ├── Rules.jsx             # regulations
+│   ├── Codes.jsx             # terminology
+│   └── Both.jsx              # Side-by-side layout wrapper
+└── App.jsx                   # Root — mode switcher (Rules / Codes / Both)
+```
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+> Requires **Node.js 18+**
+
+---
+
+## Adding Content
+
+All data lives in `src/components/data/arrays.js`. Each article/punishment is an object.
+
+---
+
+## Stack
+
+| Tool | Purpose |
+|---|---|
+| React 19 | UI |
+| Tailwind CSS 4 | Styling |
+| Framer Motion | Animations |
+| Vite | Bundler |
